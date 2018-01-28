@@ -1,0 +1,8 @@
+{
+  "name": "BarboApp",
+  "app_id": "com.BarboApp.MyBarbosa",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
