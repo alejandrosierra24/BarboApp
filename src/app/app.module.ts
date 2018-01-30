@@ -11,6 +11,7 @@ import { TabProvider } from '../providers/tab/tab';
 import { Facebook } from '@ionic-native/facebook'; 
 import firebase from 'firebase';
 import {RegistroPageModule} from '../pages/registro/registro.module';
+import { BuscadorPageModule } from '../pages/buscador/buscador.module';
 
 firebase.initializeApp({
   apiKey: "AIzaSyCxx1PJ721QsDg77kzWRC7_6gWyU8TQEGs",
@@ -28,7 +29,8 @@ firebase.initializeApp({
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    RegistroPageModule
+    RegistroPageModule,
+    BuscadorPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

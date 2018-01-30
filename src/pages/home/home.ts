@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import firebase from 'firebase';
 import { Facebook } from '@ionic-native/facebook'; 
 import {RegistroPage} from '../registro/registro';
+import {BuscadorPage} from '../buscador/buscador';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -41,5 +42,13 @@ export class HomePage {
 
 
 
+  }  
+  GoBuscador():void{
+
+    this.navCtrl.push(BuscadorPage);
+
+
+
   }
+
 }
