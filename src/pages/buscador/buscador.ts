@@ -24,10 +24,17 @@ export class BuscadorPage {
   }
   initializeItems() {
     this.items = [
-      'Amsterdam',
-      'Bogota',
-      'Argelia'
-    ];
+      'Arroz',
+      'Huevos',
+      'Frijoles',
+      'Lentejas',
+      'Azucar',
+      'Sal',
+      'Arroz Diana X1TON',
+      'Aceite Girasol X10LTS',
+      'Cereal X24',
+      'Lomito de Atún en aceite Pack X100',
+  ];
   }
 
   getItems(ev: any) {
