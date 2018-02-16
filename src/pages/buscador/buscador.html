@@ -9,21 +9,51 @@
   <ion-navbar>
     <ion-title>buscador</ion-title>
   </ion-navbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+   </ion-toolbar>
+  
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-content padding class="card-background-page">
+
   <!-- <ion-searchbar
   [(ngModel)]="myInput"
   [showCancelButton]="shouldShowCancel"
   (ionInput)="onInput($event)"
   (ionCancel)="onCancel($event)">
   </ion-searchbar> -->
+  <ion-card>
+    <img src="assets/imgs/card-aceite.jpg"/>
+    <div class="card-title" id="Ver">¡Promoción Aceite!</div>
+    <div class="card-subtitle">CAJA X24</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/card-lentejas.jpg"/>
+    <div class="card-title">¡Promoción Lentejas!</div>
+    <div class="card-subtitle">1 TON</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/card-panela.jpg"/>
+    <div class="card-title">¡Promoción Panela!</div>
+    <div class="card-subtitle">CAJA X30</div>
+  </ion-card>
+
+
   <ion-list>
     <ion-item *ngFor="let item of items">
-      {{ item }}
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/bulto-de-arroz.jpg">
+      </ion-thumbnail>
+      <h2>{{ item }}</h2>
+      <h4>$50.000</h4>
+      <p>Granos</p>
+      <button ion-button clear item-end>Ver</button>
+      
     </ion-item>
   </ion-list>
 </ion-content>

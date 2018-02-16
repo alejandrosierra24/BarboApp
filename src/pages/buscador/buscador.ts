@@ -56,4 +56,9 @@ export class BuscadorPage {
     console.log('ionViewDidLoad BuscadorPage');
   }
 
+  ocultar(){
+    document.getElementById('ver').style.display = 'none';}
+    
+
 }
+  
